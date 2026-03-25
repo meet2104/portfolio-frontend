@@ -1,0 +1,38 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
